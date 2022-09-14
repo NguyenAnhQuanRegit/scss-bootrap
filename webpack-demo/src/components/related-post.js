@@ -7,19 +7,19 @@ const RelatedPost = {
             </div>
             <div class="list-post">
                 <div class="list-post__item">
-                    <div><img class="img-fluid" src="./assets/img/cat.png"/></div>
+                    <div class="list-post__item__img"><img class="img-fluid" src="./assets/img/cat2.png"/></div>
                     <div class="list-post__title">Lorem ipsum dolor sit amet,  adipiscing elit.</div>
                 </div>
                 <div class="list-post__item">
-                    <div><img class="img-fluid" src="./assets/img/cat.png"/></div>
+                    <div class="list-post__item__img"><img class="img-fluid" src="./assets/img/cat2.png"/></div>
                     <div class="list-post__title">Lorem ipsum dolor sit amet,  adipiscing elit.</div>
                 </div>
                 <div class="list-post__item">
-                    <div><img class="img-fluid" src="./assets/img/cat.png"/></div>
+                    <div class="list-post__item__img"><img class="img-fluid" src="./assets/img/cat2.png"/></div>
                     <div class="list-post__title">Lorem ipsum dolor sit amet,  adipiscing elit.</div>
                 </div>
                 <div class="list-post__item">
-                    <div><img class="img-fluid" src="./assets/img/cat.png"/></div>
+                    <div class="list-post__item__img"><img class="img-fluid" src="./assets/img/cat2.png"/></div>
                     <div class="list-post__title">Lorem ipsum dolor sit amet,  adipiscing elit.</div>
                 </div>
             </div>

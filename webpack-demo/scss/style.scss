@@ -1,6 +1,8 @@
 @import "./colors.scss";
 @import "./fonts.scss";
-
+* {
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   font-family: $font-face;
@@ -16,3 +18,5 @@ body {
 @import "./breadcrumb.scss";
 @import "./post.scss";
 @import "./related-post.scss";
+@import "./comment.scss";
+@import "./footer.scss";
