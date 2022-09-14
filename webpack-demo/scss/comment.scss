@@ -31,9 +31,20 @@
     }
   }
 }
-
+.list-comment-row {
+  display: grid;
+  grid-template-columns: 0.1fr 3fr;
+  gap: 1em;
+  @media screen and (max-width: 570px) {
+    display: grid;
+    grid-template-columns: 0.5fr 4fr;
+  }
+}
 .list-comment-row__text {
-  margin-top: 0.8em;
+  margin-top: 0.5em;
+  @media screen and (max-width: 570px) {
+    margin-top: 0;
+  }
   .comment-name {
     font-size: 24px;
     font-weight: $font-bold;

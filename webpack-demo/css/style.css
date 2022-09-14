@@ -68,6 +68,11 @@ body {
 .outlet {
   padding: 0 6.6em;
 }
+@media screen and (max-width: 570px) {
+  .outlet {
+    padding: 0 2.8em;
+  }
+}
 
 .breadcrumb-row {
   margin-top: 10.5em;
@@ -152,6 +157,15 @@ body {
   border-radius: 6px;
   box-shadow: 0px 0.5px #cccccc;
 }
+@media screen and (max-width: 570px) {
+  .list-post {
+    display: flex;
+    flex-direction: column;
+  }
+  .list-post .list-post__item:nth-child(n+2) {
+    display: none;
+  }
+}
 
 .comment-post-title {
   text-align: center;
@@ -183,8 +197,25 @@ body {
   border-radius: 4px;
 }
 
+.list-comment-row {
+  display: grid;
+  grid-template-columns: 0.1fr 3fr;
+  gap: 1em;
+}
+@media screen and (max-width: 570px) {
+  .list-comment-row {
+    display: grid;
+    grid-template-columns: 0.5fr 4fr;
+  }
+}
+
 .list-comment-row__text {
-  margin-top: 0.8em;
+  margin-top: 0.5em;
+}
+@media screen and (max-width: 570px) {
+  .list-comment-row__text {
+    margin-top: 0;
+  }
 }
 .list-comment-row__text .comment-name {
   font-size: 24px;
