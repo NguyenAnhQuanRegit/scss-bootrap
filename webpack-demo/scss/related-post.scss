@@ -41,7 +41,7 @@
 
 @include responsive.responsive(sm) {
   .list-post {
-    @include responsive.responsiveDisplay("sm", 0, column);
+    @include responsive.responsiveDisplay("sm", 0, flex, 0);
     .list-post__item {
       &:nth-child(n + 2) {
         display: none;

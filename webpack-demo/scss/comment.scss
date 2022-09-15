@@ -23,8 +23,10 @@
 }
 
 .type-row {
-  @include responsive.responsiveDisplay("lg", 1.3em, 0.1fr 3fr);
-  @include responsive.responsiveDisplay("lg", 1em, 0.4fr 3fr);
+  display: grid;
+  grid-template-columns: 0.1fr 3fr;
+  gap: 1.3em;
+  @include responsive.responsiveDisplay(sm, 1em, grid, 0.4fr 3fr);
   align-items: center;
   .type-row__input {
     input {
@@ -36,8 +38,8 @@
   }
 }
 .list-comment-row {
-  @include responsive.responsiveDisplay("lg", 1.3em, 0.1fr 3fr);
-  @include responsive.responsiveDisplay("lg", 1.3em, 0.4fr 3fr);
+  @include responsive.responsiveDisplay(lg, 1.3em, grid, 0.1fr 3fr);
+  @include responsive.responsiveDisplay(sm, 1.3em, grid, 0.4fr 3fr);
 }
 
 .list-comment-row__text {
@@ -61,5 +63,10 @@
     font-size: 14px;
     font-weight: $font-thin;
     color: #747474;
+  }
+}
+@include responsive.responsive(sm) {
+  .list-comment-row__text {
+    margin: 0;
   }
 }

@@ -1,28 +1,33 @@
-@mixin responsiveDisplay($breakpoint, $gap, $display) {
-  @if ($breakpoint == "lg") {
+@mixin responsiveDisplay($breakpoint, $gap, $display, $gridFrame) {
+  @if ($breakpoint == lg) {
     @media screen and (max-width: 2000px) {
       display: grid;
-      grid-template-columns: $display;
+      grid-template-columns: $gridFrame;
       gap: $gap;
     }
-  } @else if($breakpoint == "sm") {
-    @media screen and (max-width: 570px) {
-      display: flex;
-      flex-direction: $display;
+  } @else if($breakpoint == sm) {
+    @media screen and (max-width: 480px) {
+      @if ($display == flex) {
+        display: flex;
+        flex-direction: column;
+      } @else {
+        display: grid;
+        grid-template-columns: $gridFrame;
+      }
     }
   }
 }
 
 @mixin responsive($breakpoint) {
-  @if ($breakpoint: sm) {
+  @if ($breakpoint == sm) {
     @media screen and (max-width: 480px) {
       @content;
     }
-  } @else if ($breakpoint: lg) {
+  } @else if ($breakpoint== lg) {
     @media screen and (max-width: 1025px) {
       @content;
     }
-  } @else if ($breakpoint: xl) {
+  } @else if ($breakpoint== xl) {
     @media screen and (max-width: 2000px) {
       @content;
     }
