@@ -1,6 +1,11 @@
+@use "../responsive";
+
 .outlet {
   padding: 0 6.6em;
-  @media screen and (max-width: 570px) {
-    padding: 0 2.8em;
+}
+
+@include responsive.responsive(sm) {
+  .outlet {
+    padding: 0 2.2em;
   }
 }

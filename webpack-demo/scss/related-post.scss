@@ -1,3 +1,5 @@
+@use "./responsive.scss";
+
 .related-post-title {
   text-align: center;
   h4 {
@@ -35,9 +37,11 @@
       box-shadow: 0px 0.5px #cccccc;
     }
   }
-  @media screen and (max-width: 570px) {
-    display: flex;
-    flex-direction: column;
+}
+
+@include responsive.responsive(sm) {
+  .list-post {
+    @include responsive.responsiveDisplay("sm", 0, column);
     .list-post__item {
       &:nth-child(n + 2) {
         display: none;

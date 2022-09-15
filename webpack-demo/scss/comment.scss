@@ -1,3 +1,4 @@
+@use "./responsive.scss";
 .comment-post-title {
   text-align: center;
   h4 {
@@ -22,6 +23,9 @@
 }
 
 .type-row {
+  @include responsive.responsiveDisplay("lg", 1.3em, 0.1fr 3fr);
+  @include responsive.responsiveDisplay("lg", 1em, 0.4fr 3fr);
+  align-items: center;
   .type-row__input {
     input {
       border: 1px solid #e1e1e1;
@@ -32,19 +36,12 @@
   }
 }
 .list-comment-row {
-  display: grid;
-  grid-template-columns: 0.1fr 3fr;
-  gap: 1em;
-  @media screen and (max-width: 570px) {
-    display: grid;
-    grid-template-columns: 0.5fr 4fr;
-  }
+  @include responsive.responsiveDisplay("lg", 1.3em, 0.1fr 3fr);
+  @include responsive.responsiveDisplay("lg", 1.3em, 0.4fr 3fr);
 }
+
 .list-comment-row__text {
   margin-top: 0.5em;
-  @media screen and (max-width: 570px) {
-    margin-top: 0;
-  }
   .comment-name {
     font-size: 24px;
     font-weight: $font-bold;
