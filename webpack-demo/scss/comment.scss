@@ -6,8 +6,7 @@
     font-weight: 700;
     color: #212121;
     line-height: 35px;
-    margin-top: 4.3em;
-    margin-bottom: 2em;
+    margin-top: 4.3em 0 2em 0;
     position: relative;
     &::after {
       content: "";
@@ -25,10 +24,11 @@
   display: grid;
   grid-template-columns: 0.1fr 3fr;
   gap: 1.3em;
+  margin-top: 3em;
   @include responsiveDisplay(sm, 1em, grid, 0.4fr 3fr);
   align-items: center;
   .type-row__input {
-    input {
+    textarea {
       border: 1px solid #e1e1e1;
       height: 55px;
       width: 100%;

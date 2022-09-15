@@ -4,6 +4,7 @@ import Footer from "../components/footer";
 import Header from "../components/header";
 import Post from "../components/post";
 import RelatedPost from "../components/related-post";
+
 const PostDetailPage = {
   render: () => {
     return /*html*/ ` 

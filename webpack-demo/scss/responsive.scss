@@ -23,11 +23,11 @@
     @media screen and (max-width: 480px) {
       @content;
     }
-  } @else if ($breakpoint== lg) {
+  } @else if ($breakpoint == lg) {
     @media screen and (max-width: 1025px) {
       @content;
     }
-  } @else if ($breakpoint== xl) {
+  } @else if ($breakpoint == xl) {
     @media screen and (max-width: 2000px) {
       @content;
     }

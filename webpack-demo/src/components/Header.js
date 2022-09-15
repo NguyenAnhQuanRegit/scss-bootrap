@@ -52,7 +52,6 @@ const Header = {
 </header>`;
   },
   afterRender: () => {
-    console.log("123");
     let prevScrollpos = window.pageYOffset;
 
     window.addEventListener("scroll", () => {
