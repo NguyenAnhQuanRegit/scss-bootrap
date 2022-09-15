@@ -2,6 +2,7 @@ import BreadCumb from "../components/bread-crump";
 import Comment from "../components/comment";
 import Footer from "../components/footer";
 import Header from "../components/header";
+import Pagination from "../components/pagination";
 import Post from "../components/post";
 import RelatedPost from "../components/related-post";
 
@@ -17,16 +18,19 @@ const PostDetailPage = {
           </section>
           <section>
             ${RelatedPost.render()}
+            ${Pagination.render()}
           </section>
           <section>
             ${Comment.render()}
           </section>
+          
         </div>
         ${Footer.render()}  
     </div>`;
   },
   afterRender: () => {
     Header.afterRender();
+    Pagination.afterRender();
   },
 };
 
