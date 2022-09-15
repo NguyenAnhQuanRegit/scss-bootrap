@@ -177,7 +177,7 @@ body {
   font-weight: 700;
   color: #212121;
   line-height: 35px;
-  margin-top: 4.3em 0 2em 0;
+  margin: 4.3em 0 2em 0;
   position: relative;
 }
 .comment-post-title h4::after {
