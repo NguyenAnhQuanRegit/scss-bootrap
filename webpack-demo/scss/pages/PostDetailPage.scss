@@ -1,10 +1,8 @@
-@use "../responsive";
-
 .outlet {
   padding: 0 6.6em;
 }
 
-@include responsive.responsive(sm) {
+@include responsive(sm) {
   .outlet {
     padding: 0 2.2em;
   }
