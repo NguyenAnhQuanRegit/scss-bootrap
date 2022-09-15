@@ -1,9 +1,9 @@
 import BreadCumb from "../components/bread-crump";
 import Comment from "../components/comment";
 import Footer from "../components/footer";
-import Header from "../components/header";
+import Header from "../components/Header";
 import Pagination from "../components/pagination";
-import Post from "../components/post";
+import Post from "../components/Post";
 import RelatedPost from "../components/related-post";
 
 const PostDetailPage = {
